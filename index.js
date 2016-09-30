@@ -12,7 +12,7 @@ if(http_proxy || https_proxy) {
 }
 
 AWS.config.update({
-  region: process.env['AWS_DEFAULT_REGION'] || 'us-west-2',
+  region: process.env['AWS_DEFAULT_REGION'] || 'us-east-1',
   httpOptions: httpOptions
 });
 
@@ -28,7 +28,7 @@ var Stack = function(_stackName) {
   this.stackName = _stackName;
 }
 
-Stack.prototype.apply = function(templateFile, options, cb) {
+Stack.prototype.apply = function(template, options, cb) {
   var self = this;
   options = lodash.merge({
     Parameters: {},
@@ -46,7 +46,6 @@ Stack.prototype.apply = function(templateFile, options, cb) {
     return {Key: k, Value: v};
   });
 
-  var template = fs.readFileSync(templateFile).toString();
   self.isValidTemplate(template, function(err, valid) {
     if(!valid) {
       return cb('Unable to update ' + self.stackName + ' - ' + err, false);

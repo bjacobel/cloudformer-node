@@ -1,8 +1,13 @@
 {
-  "name": "cloudformer-node",
-  "version": "0.0.12",
+  "name": "@bjacobel/cloudformer-node",
+  "version": "0.0.13",
   "description": "A port of the Ruby AWS CloudFormation tooling https://github.com/kunday/cloudformer",
-  "keywords": ["CloudFormation", "AWS", "cli", "command line"],
+  "keywords": [
+    "CloudFormation",
+    "AWS",
+    "cli",
+    "command line"
+  ],
   "main": "index.js",
   "bin": {
     "stack-delete": "./bin/stack-delete",

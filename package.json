@@ -32,6 +32,6 @@
     "aws-sdk": "^2.1.21",
     "commander": "^2.8.1",
     "http-proxy-agent": "^2.1.0",
-    "lodash": "^3.6.0"
+    "lodash": "^4.17.21"
   }
 }

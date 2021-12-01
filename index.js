@@ -17,8 +17,7 @@ AWS.config.update({
 });
 
 var fs = require('fs'),
-    cf = new AWS.CloudFormation(),
-    lodash = require('lodash');
+    cf = new AWS.CloudFormation()
 
 var SUCESS_STATES  = ["CREATE_COMPLETE", "UPDATE_COMPLETE"];
 var FAILURE_STATES = ["CREATE_FAILED", "DELETE_FAILED", "UPDATE_ROLLBACK_FAILED", "ROLLBACK_FAILED", "ROLLBACK_COMPLETE","ROLLBACK_FAILED","UPDATE_ROLLBACK_COMPLETE","UPDATE_ROLLBACK_FAILED"];

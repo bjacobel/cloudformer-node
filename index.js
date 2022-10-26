@@ -1,6 +1,7 @@
 var AWS = require('aws-sdk');
-
+var lodash = require('lodash');
 var HttpProxyAgent = require('http-proxy-agent');
+
 var httpOptions = {};
 
 var http_proxy = process.env.HTTP_PROXY || process.env.http_proxy;

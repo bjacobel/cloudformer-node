@@ -1,6 +1,6 @@
 {
   "name": "@bjacobel/cloudformer-node",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "A port of the Ruby AWS CloudFormation tooling https://github.com/kunday/cloudformer",
   "keywords": [
     "CloudFormation",
